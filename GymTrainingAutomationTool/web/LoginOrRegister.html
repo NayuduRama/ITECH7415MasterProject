@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Login and Registration Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+      <div class="nav-wrapper">
+          <div class="left-side">
+              <div class="nav-link-wrapper">
+                <a href="index.html">Home</a>
+              </div>
+
+              <div class="nav-link-wrapper">
+                <a href="about.html">About</a>
+              </div>
+
+              <div class="nav-link-wrapper">
+                <a href="LoginOrRegister.html">Login/Register</a>
+            </div>
+              <div class="nav-link-wrapper">
+                  <a href="blog.html">Blog</a>
+              </div>
+              <div class="nav-link-wrapper">
+                  <a href="gympackages.html">Package</a>
+              </div>
+          </div>
+
+
+      </div>
+  <div class="content-wrapper">
+    <div class="hero">
+      <div class="form-box">
+            <div class="button-box">
+              <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+              <button type="button" class="toggle-btn"onclick="register()">Register</button>
+
+            </div>
+            <form id="login" class="input-group" >
+              <input type="text" class="input-field" placeholder="used ID"required>
+              <input type="password" class="input-field" placeholder="Enter Password"required>
+              <input type="checkbox" class="check-box">Remember Password
+              <button type="submit" class="submit-btn">Log in</button><br>
+              <a href="forgetpassword.html" style="margin-left:75px;">Forget Password</a>
+            </form>
+            <form  id="register" class="input-group" action="connection.jsp" method="post">
+              <input type="text" class="input-field" placeholder="user ID"required name="userid">
+              <input type="email" class="input-field" placeholder="Email Id"required name="emailid">
+              <input type="password" class="input-field" placeholder="Enter Password"required name="password">
+
+              <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+              <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            var a = document.getElementById("forgetPassword")
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+                a.style.left = "450px"
+
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+                a.style.left = "900px"
+            }
+            function forgetpassword(){
+                x.style.left = "-900px";
+                y.style.left = "-400px";
+                z.style.left = "0";
+                a.style.left = "50px"
+            }
+        </script>
+
+
+
+</body>
+</html>

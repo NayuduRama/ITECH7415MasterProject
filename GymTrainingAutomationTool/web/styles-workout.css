@@ -1,0 +1,65 @@
+.workout-form{
+	
+	 height: 1%;
+    width: 100%;
+  background-color :white;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box-work{
+    width: 40%;
+    height: 75%;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.label {
+  color: white;
+  padding: 8px;
+  box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+	  box-shadow: 5px 10px;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.info {background-color: #2196F3;} /* Blue */
+.warning {background-color: #ff9800;} /* Orange */
+.danger {background-color: #f44336;} /* Red */
+.other {background-color: #e7e7e7; color: black;} /* Gray */
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
